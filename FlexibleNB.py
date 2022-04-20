@@ -3,42 +3,6 @@ from scipy.stats import gaussian_kde as sp_kde
 from statsmodels.nonparametric.kernel_density import KDEMultivariate as sm_kde
 
 
-# class gaussian_kde:
-#     def __init__(self, X):
-#         self.dataset = X
-#         mu = X.mean(axis=1, keepdims=True)
-#         Z = X - mu
-#         self.H = np.dot(Z, Z.T)
-#         self.det_H = np.linalg.det(self.H)
-
-#     def evaluate_one(self, x):
-#         p, n = self.dataset.shape
-#         x = x.reshape(p, 1)
-#         x = x - self.dataset
-
-#         s = 0
-#         for i in range(n):
-#             s += np.exp(-0.5 * np.linalg.multi_dot([
-#                 x[:, i].reshape(1, -1),
-#                 np.linalg.inv(self.H),
-#                 x[:, i].reshape(-1, 1)
-#             ]))
-
-#         return s * (self.det_H**-0.5) / n
-
-#     def evaluate(self, X_new):
-#         X_new = X_new.reshape(self.dataset.shape[0], -1)
-#         _, m = X_new.shape
-
-#         density = np.zeros(m)
-#         for i in range(m):
-#             density[i] = self.evaluate_one(X_new[:, i])
-
-#         return density
-
-#     __call__ = evaluate
-
-
 class kde:
     __bw_methods__ = ['scott', 'silverman', 'normal_reference', 'cv_ml', 'cv_ls']
 
