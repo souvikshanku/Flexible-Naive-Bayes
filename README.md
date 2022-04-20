@@ -35,7 +35,7 @@ Data are generated from a multivariate laplace distribution with the location pa
 ## Real Life Data Analysis
 For Real life data, the iris dataset, wisconsin breast cancer dataset and wine datasets are used.
 
-### Wisconsin Breast Cancer Dataset
+### 1. Wisconsin Breast Cancer Dataset
 * Number of classes is 2
 * Total number of observations is 569
 
@@ -47,7 +47,7 @@ For Real life data, the iris dataset, wisconsin breast cancer dataset and wine d
 |Flexible Bayes (CV-LS)|1.0000|0.4196|
 |Flexible Bayes (CV-ML)|0.9765|0.9440|
 
-### Iris Dataset
+### 2. Iris Dataset
 * Number of classes is 3
 * Number of observations is 150
 
@@ -59,7 +59,7 @@ For Real life data, the iris dataset, wisconsin breast cancer dataset and wine d
 |Flexible Bayes (CV-LS)|1.0000|0.7894|
 |Flexible Bayes (CV-ML)|0.9910|0.9736|
 
-### Wine Dataset
+### 3. Wine Dataset
 * Number of classes is 3
 * Number of observations is 178
 
