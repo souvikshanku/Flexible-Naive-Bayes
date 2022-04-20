@@ -1,13 +1,12 @@
 # Flexible Naive Bayes
 A comparative study between Naive Bayes Classifier and Flexible Bayes Classifier
 
----
 
 ## Simulation
 Data generated from both Gaussian and non Gaussian Distribution and compared the predictive accuracies between Naive Bayes and Flexible Bayes Classifier.
 
 ### 1. Gaussian Distribution
-Data are generated from a ![equation](https://latex.codecogs.com/svg.image?N_5(\mu,&space;I_n)) distribution where $\mu = (1, 2, 3, 4, 5)'$.
+Data are generated from a ![equation](https://latex.codecogs.com/svg.image?%5Cbg_white%20N_5(\mu,&space;I_n)) distribution where $\mu = (1, 2, 3, 4, 5)'$.
 
 * Number of Classes $=5$
 * Class Sizes $ = [100, 110, 95, 101, 99]$
